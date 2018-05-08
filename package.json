@@ -1,0 +1,25 @@
+{
+  "name": "katayuno-20180508-trading-card-game",
+  "version": "0.1.0",
+  "main": "web/index.html",
+  "description": "Katayuno día 08 de mayo de 2018",
+  "scripts": {
+    "test": "export BABEL_ENV=test && export NODE_ENV=test && ./node_modules/.bin/babel-tape-runner tests/*.test.js | ./node_modules/.bin/tap-spec"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Rafael Minguet García",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-tape-runner": "^2.0.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.9.0"
+  }
+}
