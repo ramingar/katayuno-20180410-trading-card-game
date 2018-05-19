@@ -1,7 +1,7 @@
 .idea
 node_modules
-/sonar-project.properties
-/coverage.data
+sonar-project.properties
+coverage.data
 .scannerwork
 .nyc_output
-sonar-scanner-3.1.0.1141-linux
+sonar-scanner-linux

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "export BABEL_ENV=test && export NODE_ENV=test && ./node_modules/.bin/babel-tape-runner tests/*.test.js | ./node_modules/.bin/tap-spec",
     "coverage": "./node_modules/.bin/nyc npm test && ./node_modules/.bin/nyc report --reporter=text-lcov > coverage.data",
-    "code-quality": "export PATH=$PATH:./sonar-scanner-3.1.0.1141-linux/bin && npm run coverage && sonar-scanner"
+    "code-quality": "export PATH=$PATH:./sonar-scanner-linux/bin && npm run coverage && sonar-scanner"
   },
   "keywords": [
     "javascript"
