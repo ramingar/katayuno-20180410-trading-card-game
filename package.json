@@ -4,7 +4,9 @@
   "main": "web/index.html",
   "description": "Katayuno día 08 de mayo de 2018",
   "scripts": {
-    "test": "export BABEL_ENV=test && export NODE_ENV=test && ./node_modules/.bin/babel-tape-runner tests/*.test.js | ./node_modules/.bin/tap-spec"
+    "test": "export BABEL_ENV=test && export NODE_ENV=test && ./node_modules/.bin/babel-tape-runner tests/*.test.js | ./node_modules/.bin/tap-spec",
+    "coverage": "./node_modules/.bin/nyc npm test && ./node_modules/.bin/nyc report --reporter=text-lcov > coverage.data",
+    "code-quality": "export PATH=$PATH:./sonar-scanner-3.1.0.1141-linux/bin && npm run coverage && sonar-scanner"
   },
   "keywords": [
     "javascript"
@@ -19,6 +21,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-tape-runner": "^2.0.1",
+    "nyc": "^11.8.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.9.0"
   }
